@@ -23,6 +23,14 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <testFilesIncluded>${test-file}</testFilesIncluded>
+                    <propertiesUser>
+                        <LOOPS>${loops}</LOOPS>
+                        <THREADS>${threads}</THREADS>
+                        <RAMP>${ramp}</RAMP>
+                    </propertiesUser>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
